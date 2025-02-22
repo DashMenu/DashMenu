@@ -20,7 +20,7 @@ CPMAddPackage("gh:DashMenu/GDReplayFormat#4950cc2")
 CPMAddPackage("gh:DashMenu/rift#c3f1c29")
 CPMAddPackage("gh:DashMenu/subprocess#e12740b")
 CPMAddPackage(
-    NAME nlohmann_json
+    NAME DashMenu_cppjson
     GITHUB_REPOSITORY nlohmann/json
     VERSION 3.11.3
 )
@@ -36,6 +36,6 @@ target_link_libraries(third_party INTERFACE
     subprocess
     imgui
     imgui-cocos
-    nlohmann_json::nlohmann_json
+    DashMenu_cppjson::DashMenu_cppjson
     rift
 )
